@@ -1,1 +1,0 @@
-# print(len(thisdict)) -> will return count of eements
