@@ -1,15 +1,16 @@
-class Square:
-        def __init__(self, lenght):
-            self.lenght = lenght
-        def area(s, area_1 = 0):
-            print(area_1)
-class Shape(Square):
-    pass 
+class Rectangle:
+    def __init__(self, a, b):
+        self.S = self.a * self.b
+    
+    def area(self):
+        print(self.a * self.b)
+
+class Shape(Rectangle):
+    def __init__(self, a = 0, b = 0):
+        Rectangle.a = a 
+        Rectangle.b = b
 
 
-cl_1 = Shape(12)
-cl_1.area()
-cl_1.area(12)
+p1 = Shape(5, 6)
 
-
-
+p1.area()
