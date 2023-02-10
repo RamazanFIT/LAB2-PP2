@@ -1,7 +1,4 @@
-list_input_size = int(input())
-list_input = list()
-for i in range(list_input_size):
-    list_input.append(int(input()))
+list_input = list(map(int, input().split()))
 
 def has_33(list_input: list):
     list_string = str()
@@ -13,7 +10,3 @@ def has_33(list_input: list):
         return False 
 
 print(has_33(list_input))
-
- 
-
-    
