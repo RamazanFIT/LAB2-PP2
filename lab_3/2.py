@@ -85,6 +85,6 @@ def show_rate_film():
             list_1.append(i["name"])
     return list_1 
 
-print(show_rate_film)
+print(show_rate_film())
     
 
