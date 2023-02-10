@@ -19,11 +19,7 @@ def filter_prime(all_numbers: list):
     return prime_numbers
 
 
-size_list = int(input())
-list_1 = list()
-
-for i in range(size_list):
-    list_1.append(int(input()))
+list_1 = list(map(int, input().split()))
 
 print(filter_prime(list_1))
 
