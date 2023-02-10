@@ -77,19 +77,16 @@ movies = [
 "category": "Romance"
 }
 ]
-list_1 = []
-size = int(input())
 
-for i in range(size):
-    list_1.append(str(input()))
+list_1 = list(map(str, input().split())
 
-def show_rating_av_film(list_1 : list, size : int):
+def show_rating_av_film(list_1 : list):
     cnt = 0
     for i in list_1:
         for s in movies:
             if i in s.values():
                 cnt += s["imdb"]
-    return cnt/size
+    return cnt/len(list_1)
 
 
 
