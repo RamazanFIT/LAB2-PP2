@@ -1,22 +1,12 @@
 def solve(numheads, numlegs):
-    chicken = numheads 
-    numrab = (numlegs - chicken*2)//2
-    dict = {}
-    dict["chickens"] = chicken 
-    dict["rabbits"] = numrab 
-    return(dict)
+    b = True
+    for i in range(numheads+1):
+        j = numheads - i
+        if j*4 + i*2 == numlegs:
+            print(i, j)
+            b = False
+    if b:
+        print("No")
 
-
-
-     
-
-
-
-heads = int(input())
-
-legs = int(input())
-
-answer = solve(heads, legs)
-
-print(answer)
-
+x, y = tuple(map(int, input().split()))    
+solve(x, y)
